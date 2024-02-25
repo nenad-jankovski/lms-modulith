@@ -1,4 +1,4 @@
-package com.jnenad.lms.learning.domain;
+package com.jnenad.lms.course.domain;
 
 import lombok.Builder;
 

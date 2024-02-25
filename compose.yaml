@@ -3,3 +3,12 @@ services:
     image: 'openzipkin/zipkin:latest'
     ports:
       - '9411'
+  database:
+    image: 'postgres:latest'
+    container_name: 'lms-postgress'
+    ports:
+      - '15432:5432'
+    environment:
+      - 'POSTGRES_USER=lms'
+      - 'POSTGRES_DB=lms'
+      - 'POSTGRES_PASSWORD=secret'

@@ -17,6 +17,7 @@ class LmsModulithApplicationTest {
     @Test
     void writeDocumentationSnippets() {
         new Documenter(modules)
+                .writeDocumentation()
                 .writeModuleCanvases()
                 .writeModulesAsPlantUml()
                 .writeIndividualModulesAsPlantUml();

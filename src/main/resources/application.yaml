@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:15432/lms"
+    username: "lms"
+    password: "secret"
+  jpa:
+    open-in-view: false
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+
+management.endpoints.web.exposure.include: "*"
