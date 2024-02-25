@@ -1,4 +1,4 @@
-package com.jnenad.lms.course.application;
+package com.jnenad.lms.course;
 
 import java.util.UUID;
 
