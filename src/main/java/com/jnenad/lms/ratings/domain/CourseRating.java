@@ -1,4 +1,4 @@
-package com.jnenad.lms.course.domain;
+package com.jnenad.lms.ratings.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -8,15 +8,16 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @Builder
-@Table(name = "lessons")
+@Table(name = "course_rating")
 @AllArgsConstructor
-public final class Lesson {
+public class CourseRating {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  private String title;
-  @Column(name = "lesson_content")
-  private String content;
   private Long courseId;
+
+  private Long userId;
+
+  private int rating;
 }

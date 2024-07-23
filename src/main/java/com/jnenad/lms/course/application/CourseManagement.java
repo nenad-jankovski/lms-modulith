@@ -9,10 +9,13 @@ import java.util.Objects;
 import java.util.UUID;
 
 import com.jnenad.lms.commons.exceptions.ResourceAlreadyExistsException;
+import com.jnenad.lms.course.infrastructure.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class CourseManagement implements CourseExternalAPI, CourseInternalAPI {
   private final CourseRepository courseRepository;

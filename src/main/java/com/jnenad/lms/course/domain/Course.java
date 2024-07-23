@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import java.util.UUID;
 
 import lombok.*;
-import org.jmolecules.ddd.annotation.Identity;
 
 @Entity
 @Getter
@@ -15,7 +14,6 @@ import org.jmolecules.ddd.annotation.Identity;
 @AllArgsConstructor
 public class Course {
   @Id
-  @Identity
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 

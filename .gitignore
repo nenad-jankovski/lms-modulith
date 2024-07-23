@@ -139,3 +139,4 @@ replay_pid*
 /.mvn/wrapper/maven-wrapper.properties
 /mvnw
 /mvnw.cmd
+/.mvn/
